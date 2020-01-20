@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 7vh;
+      background-color: white;
+      color: black;
+      text-align: center;
+    }
+    </style>
+<body>
+    <div class="container" style="width: 50vw; margin-top: 10vh">
+        <div class="card">
+            <div class="card-header"><h2>State City Select List</h2></div>
+            <div class="card-body">
+                <select class="form-control" name="state" id="state">
+                    <option value="State" selected disabled>State</option>
+                </select>
+                <br>
+                <br>
+                <select class="form-control" name="city" id="city">
+                    <option value="City" selected disabled>City</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &#169 <script>document.write(new Date().getFullYear());</script> <a href="">Kartikay Sawhney</a></p>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="./state-city.js"></script>
+</html>

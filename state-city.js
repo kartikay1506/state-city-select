@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 //Function to Generate State List
 function getStateList(id) {
-    var states = ["State", "Andhra Pradesh", "Andaman and Nicobar Islands", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadar and Nagar Haveli", "Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Ladakh", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Puducherry", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal"];
+    var states = ["State", "Andhra Pradesh", "Andaman and Nicobar Islands", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadar and Nagar Haveli", "Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Ladakh", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Puducherry", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Other"];
 
     var stateselect = "";
     $('#'+id+' option').remove();
@@ -139,6 +139,9 @@ function getCityList(state, id) {
     }
     else if(state == "West Bengal") {
         arr = ["Adra", "Alipurduar", "Amlagora", "Arambagh", "Asansol", "Balurghat", "Bankura", "Bardhaman", "Basirhat", "Berhampur", "Bethuadahari", "Birbhum", "Birpara", "Bishanpur", "Bolpur", "Bongoan", "Bulbulchandi", "Burdwan", "Calcutta", "Canning", "Champadanga", "Contai", "Cooch Behar", "Daimond Harbour", "Dalkhola", "Dantan", "Darjeeling", "Dhaniakhali", "Dhuliyan", "Dinajpur", "Dinhata", "Durgapur", "Gangajalghati", "Gangarampur", "Ghatal", "Guskara", "Habra", "Haldia", "Harirampur", "Harishchandrapur", "Hooghly", "Howrah", "Islampur", "Jagatballavpur", "Jalpaiguri", "Jhalda", "Jhargram", "Kakdwip", "Kalchini", "Kalimpong", "Kalna", "Kandi", "Karimpur", "Katwa", "Kharagpur", "Khatra", "Krishnanagar", "Mal Bazar", "Malda", "Manbazar", "Mathabhanga", "Medinipur", "Mekhliganj", "Mirzapur", "Murshidabad", "Nadia", "Nagarakata", "Nalhati", "Nayagarh", "Parganas", "Purulia", "Raiganj", "Rampur Hat", "Ranaghat", "Seharabazar", "Siliguri", "Suri", "Takipur", "Tamluk"];
+    }
+    else if(state == "Other") {
+        arr = ["Other"]
     }
 
     cityselect = '';
